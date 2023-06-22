@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.containerS{ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.container{
+   width: 400px;
+    background-color: rgb(99, 99, 185);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerTitle{
+    background-color: rgb(99, 99, 185);
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    font-size: 30px;
+    
+}
+
+.containerInput{
+    border-top: 5px solid chartreuse;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerInput div{
+    margin-top: 15px;
+    flex-wrap: wrap;
+
+}
+input{
+    width: 200px;
+    height: 35px;
+    margin:5px;
+    font-size: 20px;
+    padding-left: 6px;
+  }
+
+  label{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  button{
+    padding:10px 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .result{
+    width: 250px;
+    height: 100px;
+    background-color:chartreuse ;
+    margin-top: 100px;
+    border: 3px dashed rgb(99, 99, 185);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    color: rgb(99, 99, 185);
+    font-weight: bold;
+    padding-left:10px ;
+    padding-right: 10px;
+  }
+.efeito{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.linha1{
+  border: 3px dashed rgb(99, 99, 185);
+  width: 1px;
+  height: 50px;
+  margin-bottom:1px ;
+}
+.loading{
+  animation: is-rotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border: 6px solid #e5e5e5;
+  border-top-color: #51d4db;
+  border-radius: 50px;
+}
+ @keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+ }
+
+
+.linha2{
+  border: 3px dashed rgb(99, 99, 185);
+  width: 1px;
+  height: 50px;
+  margin-top: 1px;
+}
+ .containerImc{
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px auto 20px auto; */
+    justify-content:space-around;
+    border-radius: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(99, 99, 185);
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    background-color: white;
+    border-radius: 40px;
+    align-items: center;
+    margin: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .box div{
+    width: 100px;
+  }
+
+  img{
+    width: 100%;
+    border-radius: 30px; 
+  }
+
+  p,h3{
+    text-align: center;
+  }
+  .box1{
+    background-color: green;
+  }
+  .sumir{
+    display: none;
+  }

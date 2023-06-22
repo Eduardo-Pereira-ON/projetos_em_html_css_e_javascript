@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="containerS">
+    <div class="container">
+
+        <div class="containerTitle"></div>
+        <div class="containerInput">
+            <div>
+                <label>Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <div>
+                <label>Altura:</label>
+                <input type="number" id="altura">
+            </div>
+            <div>
+                <label>Peso:</label>
+                <input type="number" id="peso">
+            </div>
+            <button id="calcular">Calcular</button>
+
+            <div class="result" id="resultado"></div>
+            <button class="bt-saude" id="calcSaude">click para saber com esta sua saude</button>
+        </div>
+    </div>
+</div>
+
+<div class="efeito">
+    <div class="linha1"></div>
+    <div  id="sumir1"></div>
+    <div class="linha2"></div>
+</div>
+
+    <div class="containerImc">
+        <div class="box">
+            <div><img src="./img_imc/1.png" alt=""></div>
+            <h3>Menor que 18,5</h3>
+            <p>Abaixo do peso</p>
+        </div>
+        <div class="box">
+            <div><img src="./img_imc/2.png" alt=""></div>
+            <h3>Entre 18,5 e 24,9</h3>
+            <p>Peso normal</p>
+        </div>
+        <div class="box">
+            <div><img src="./img_imc/3.png" alt=""></div>
+            <h3>Entre 25 e 29,9</h3>
+            <p>Sobrepeso</p>
+        </div>
+        <div class="box">
+            <div><img src="./img_imc/4.png" alt=""></div>
+            <h3>Entre 30 e 34,9</h3>
+            <p>Obesidae grau 1</p>
+        </div>
+        <div class="box">
+            <div><img src="./img_imc/5.png" alt=""></div>
+            <h3>Entre 35 e 39,9</h3>
+            <p>Obesidade grau 2</p>
+        </div>
+        <div class="box">
+            <div><img src="./img_imc/6.png" alt=""></div>
+            <h3>Igual ou superior a 40</h3>
+            <p>Obesidade grau 3</p>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="index.js">
+        document.getElementById('sumir1').classList.add('loading')
+    </script>
+</body>
+</html>
